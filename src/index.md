@@ -2,16 +2,17 @@
 layout: home
 ---
 ## Dependencies
+Your development environment should have ruby and the gem package manager setup already.
 
 1. Install bundler `gem install bundler`
-2. Install bower `npm install -g bower`
+2. Install [yarn](https://yarnpkg.com/en/docs/install)
 
 ## Getting Started
 
 ```
 $ bundle install
-$ bower install
-$ jekyll serve
+$ yarn install
+$ bundle exec jekyll serve
 ```
 
 ## Deploy to Github Pages from Travis
