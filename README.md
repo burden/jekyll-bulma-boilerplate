@@ -64,36 +64,6 @@ When deploying to Netlify, the blog will automatically integrate with Netlify Fo
 If you don't have access to `rake` or you don't care to obfuscate your email address, you can choose to display your email in plaintext by inputing your address in the `site.contact.email-plain` block. 
 
 
-## Usage
-
-### Add your email address
-
-```sh
-$ bundle exec rake email
-Please type in an email address then press ENTER/RETURN
-contact@example.com
-
-Installation:
-Update src/_config.yml with the following pairs.
-
-email-key: d05fIsWcv61GbThaN3FkOuL9mHXVnYgBQJUR8r2S7DizwKexqtAZMCP4Eoplyj
-email-encoded: XhxWUXW@fIUzaNf.Xhz
-```
-
-### Contact Page
-
-The contact page uses Formspree.io by default, unless deploying to Netlify.
-
-Some things to consider
-- 100 free submissions per month
-- Upon submission, it will Redirects you to thank you page (see thanks.html)
-- No registration required
-
-When deploying to Netlify, the blog will automatically integrate with Netlify Forms. If you still prefer to use Formspree.io, simply change the `site.contact.page.service` block to `formspree`
-
-If you don't have access to `rake` or you don't care to obfuscate your email address, you can choose to display your email in plaintext by inputing your address in the `site.contact.email-plain` block. 
-
-
 ## Deploy
 
 ### Deploy to Github Pages from Travis
