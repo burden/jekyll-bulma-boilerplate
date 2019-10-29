@@ -1,13 +1,14 @@
 source "https://rubygems.org"
 ruby RUBY_VERSION
-gem "jekyll", "~> 3.8.1"
-gem "rake"
+gem "jekyll", "~> 3.8.6"
+gem "font-awesome-sass"
 gem "html-proofer"
-gem "nokogiri", ">= 1.8.5"
-gem "rack", ">= 2.0.6"
-
+gem "rake"
+gem "sprockets", "~> 3.7"
 group :jekyll_plugins do
   gem "jekyll-assets"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
   gem "kramdown"
   gem "uglifier", "~> 3.2"
 end

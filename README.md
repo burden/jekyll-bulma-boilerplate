@@ -9,7 +9,7 @@ A nifty boilerplate for Jekyll made magnificent with the help of Bulma.
 
 ## Features
 
-- [Bulma 0.7.4](https://github.com/jgthms/bulma/tree/0.7.4)
+- [Bulma 0.8.0](https://github.com/jgthms/bulma/tree/0.8.0)
 - [jQuery 3.2.1](https://github.com/jquery/jquery/tree/3.2.1)
 - Dependency management: [yarn](https://yarnpkg.com)
 - Asset pipeline: [jekyll-assets](https://rubygems.org/gems/jekyll-assets)
@@ -17,7 +17,9 @@ A nifty boilerplate for Jekyll made magnificent with the help of Bulma.
 - HTML compression: [compress.html](http://jch.penibelst.de/)
 - Testing: [html-proofer](https://github.com/gjtorikian/html-proofer)
 - Analytics: [Google Analytics](https://www.google.com/analytics/)
-
+- Contact page
+  - Honeypot and reCAPTCHA implemented to thwart spam-bots
+  
 ## Dependencies
 Your development environment should have ruby and the gem package manager setup already.
 
@@ -31,6 +33,66 @@ $ bundle install
 $ yarn install
 $ bundle exec jekyll serve
 ```
+
+## Usage
+
+### Add your email address
+
+```sh
+$ bundle exec rake email
+Please type in an email address then press ENTER/RETURN
+contact@example.com
+
+Installation:
+Update src/_config.yml with the following pairs.
+
+email-key: d05fIsWcv61GbThaN3FkOuL9mHXVnYgBQJUR8r2S7DizwKexqtAZMCP4Eoplyj
+email-encoded: XhxWUXW@fIUzaNf.Xhz
+```
+
+### Contact Page
+
+The contact page uses Formspree.io by default, unless deploying to Netlify.
+
+Some things to consider
+- 100 free submissions per month
+- Upon submission, it will Redirects you to thank you page (see thanks.html)
+- No registration required
+
+When deploying to Netlify, the blog will automatically integrate with Netlify Forms. If you still prefer to use Formspree.io, simply change the `site.contact.page.service` block to `formspree`
+
+If you don't have access to `rake` or you don't care to obfuscate your email address, you can choose to display your email in plaintext by inputing your address in the `site.contact.email-plain` block. 
+
+
+## Usage
+
+### Add your email address
+
+```sh
+$ bundle exec rake email
+Please type in an email address then press ENTER/RETURN
+contact@example.com
+
+Installation:
+Update src/_config.yml with the following pairs.
+
+email-key: d05fIsWcv61GbThaN3FkOuL9mHXVnYgBQJUR8r2S7DizwKexqtAZMCP4Eoplyj
+email-encoded: XhxWUXW@fIUzaNf.Xhz
+```
+
+### Contact Page
+
+The contact page uses Formspree.io by default, unless deploying to Netlify.
+
+Some things to consider
+- 100 free submissions per month
+- Upon submission, it will Redirects you to thank you page (see thanks.html)
+- No registration required
+
+When deploying to Netlify, the blog will automatically integrate with Netlify Forms. If you still prefer to use Formspree.io, simply change the `site.contact.page.service` block to `formspree`
+
+If you don't have access to `rake` or you don't care to obfuscate your email address, you can choose to display your email in plaintext by inputing your address in the `site.contact.email-plain` block. 
+
 
 ## Deploy
 

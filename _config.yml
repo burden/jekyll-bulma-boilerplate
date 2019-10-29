@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: jekyll-bulma-boilerplate
-email: burden@burden.cc
 description: >- # this means to ignore newlines until "baseurl:"
   A nifty boilerplate for Jekyll made magnificent with the help of Bulma.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -24,6 +23,16 @@ analytics-id:
 github: burden/jekyll-bulma-boilerplate
 maintainers:
   - burden
+
+contact:
+  email-plain: # put your email address here to disable obfuscation
+  email-key: 1nBbONFhyVzmU7rWSaquH6ICGTcQ0olKX5jk9Y2e8fsiLJPvAdE4RMpZDtw3gx
+  email-encoded: JAHr9Jr@wq9lmdw.JAl
+  page:
+    service: auto # options: auto, formspree
+    thanks: "/thanks/" # after form submitted, send visitor here
+    honeypot: true
+    recaptcha: true # note: has no effect on formspree.io free
 
 # Build settings
 plugins:

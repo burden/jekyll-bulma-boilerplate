@@ -1,8 +1,11 @@
 - 
-  package: jekyll 3.8.5
+  caption: Contact Form
+  icon: envelope
+- 
+  package: jekyll 3.8.6
   icon: vial
 - 
-  package: bulma 0.7.4
+  package: bulma 0.8
   icon: scroll
 -
   package: jQuery 3.2.1
@@ -10,9 +13,6 @@
 - 
   caption: Analytics
   icon: chart-pie
-- 
-  caption: Continuous Integration
-  icon: recycle 
 -
   caption: Dependency Management
   icon: layer-group  
@@ -26,5 +26,5 @@
   caption: HTML compression
   icon: code 
 - 
-  caption: Continuous Deployment
+  caption: CI / CD
   icon: crosshairs
